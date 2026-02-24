@@ -1,0 +1,218 @@
+﻿
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самуел - Мир животных</title>
+    <style>
+        :root {
+            --фон: #0a0a0c;
+            --акцент: #00e5ff;
+            --карточка: rgba(255, 255, 255, 0.05);
+            --текст: #ffffff;
+        }
+        body { background-color: var(--фон); color: var(--текст); font-family: 'Segoe UI', sans-serif; margin: 0; padding: 20px; }
+        header { text-align: center; padding: 40px 0; }
+        h1 { font-size: 3rem; margin: 0; background: linear-gradient(to right, #fff, var(--акцент)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-transform: uppercase; }
+        .setka { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px; max-width: 1400px; margin: 0 auto; }
+        .card { background: var(--карточка); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 15px; transition: 0.3s; display: flex; flex-direction: column; }
+        .card:hover { transform: translateY(-10px); border-color: var(--акцент); box-shadow: 0 10px 30px rgba(0, 229, 255, 0.2); }
+        .img-box { width: 100%; height: 220px; border-radius: 15px; overflow: hidden; background: #111; margin-bottom: 15px; }
+        .card img { width: 100%; height: 100%; object-fit: cover; }
+        .badge { color: var(--акцент); font-size: 0.75rem; font-weight: bold; text-transform: uppercase; margin-bottom: 5px; display: block; }
+        h2 { margin: 0 0 10px 0; font-size: 1.5rem; }
+        p { font-size: 0.9rem; color: #ccc; line-height: 1.5; margin: 0; flex-grow: 1; }
+        footer { text-align: center; padding: 50px; opacity: 0.4; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Дикая Природа</h1>
+    <p>Краткая информация о 25 - животных</p>
+</header>
+
+<div class="setka">
+    <div class="card">
+        <div class="img-box"><img src="https://plus.unsplash.com/premium_photo-1661947244732-7f91be5262e5?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Лев"></div>
+        <span class="badge">Саванна</span>
+        <h2>Лев</h2>
+        <p>Царь зверей. Единственные кошки, живущие в больших семьях — прайдах.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://plus.unsplash.com/premium_photo-1661867529492-4941c875b6c5?q=80&w=1163&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Белый медведь"></div>
+        <span class="badge">Арктика</span>
+        <h2>Белый медведь</h2>
+        <p>Крупнейший сухопутный хищник. Его кожа под мехом — черного цвета.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://images.unsplash.com/photo-1508817628294-5a453fa0b8fb?w=500" alt="Тигр"></div>
+        <span class="badge">Тайга</span>
+        <h2>Амурский тигр</h2>
+        <p>Величественный охотник. Полоски каждого тигра уникальны, как отпечатки пальцев.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://img.freepik.com/free-photo/ocean-pollution-campaign-with-whale-swimming-with-plastic-bags-floating_53876-124604.jpg?semt=ais_related_payload_trends&w=740&q=80" alt="Кит"></div>
+        <span class="badge">Океан</span>
+        <h2>Горбатый кит</h2>
+        <p>Известен своими песнями, которые слышны на многие километры в океане.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://images.unsplash.com/photo-1648216727471-9c9e8f323301?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Панда"></div>
+        <span class="badge">Китай</span>
+        <h2>Большая панда</h2>
+        <p>Бамбуковый мишка. Проводит за едой почти половину своей жизни.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://plus.unsplash.com/premium_photo-1661813434310-98cca4c9135e?q=80&w=1167&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Жираф"></div>
+        <span class="badge">Африка</span>
+        <h2>Жираф</h2>
+        <p>Самое высокое животное. У него длинный синий язык для поедания колючек.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://plus.unsplash.com/premium_photo-1695715885290-dce60e3f424e?q=80&w=1221&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Кенгуру"></div>
+        <span class="badge">Австралия</span>
+        <h2>Кенгуру</h2>
+        <p>Символ Австралии. Мощный хвост служит ему опорой и балансиром.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://zoogalaktika.ru/assets/images/easy/pictures/irbis_01.jpg" alt="Снежный барс"></div>
+        <span class="badge">Горы</span>
+        <h2>Снежный барс</h2>
+        <p>Мастер маскировки. Его называют "призраком гор" за скрытный образ жизни.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://web-zoopark.ru/wp-content/uploads/2018/06/9-62.jpg" alt="Орангутан"></div>
+        <span class="badge">Острова</span>
+        <h2>Орангутан</h2>
+        <p>Название переводится как "лесной человек". Очень умные приматы.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://images.unsplash.com/photo-1728343070447-cadb4a688646?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Акула"></div>
+        <span class="badge">Океан</span>
+        <h2>Белая акула</h2>
+        <p>Легендарный морской хищник. Ее зубы сменяются на протяжении всей жизни.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://arhiv.bb.lv/engine/client/content/articles/mega/16057869383902408a8d08db5f168031f9c856007858e.jpg" alt="Лемур"></div>
+        <span class="badge">Мадагаскар</span>
+        <h2>Лемур</h2>
+        <p>Житель острова Мадагаскар с ярким взглядом и длинным хвостом.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://images.unsplash.com/photo-1562683687-607caadb74e2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Красная панда"></div>
+        <span class="badge">Лес</span>
+        <h2>Красная панда</h2>
+        <p>Больше похожа на енота, чем на медведя. Любит спать на ветках деревьев.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://images.unsplash.com/photo-1584550127005-436aebe461be?q=80&w=1167&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Слон"></div>
+        <span class="badge">Африка</span>
+        <h2>Слон</h2>
+        <p>Самое крупное наземное животное. Обладает невероятным интеллектом.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://images.unsplash.com/photo-1728321653765-c2901aa9305a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Пингвин"></div>
+        <span class="badge">Антарктида</span>
+        <h2>Пингвин</h2>
+        <p>Птица, которая не летает в воздухе, но прекрасно "летает" под водой.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEaI_WEWseixoWSvYdZvnFEsjVo6cXb57Otg&s" alt="Бегемот"></div>
+        <span class="badge">Реки</span>
+        <h2>Бегемот</h2>
+        <p>Несмотря на вес, бегемоты могут бегать очень быстро и очень опасны.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=500" alt="Лиса"></div>
+        <span class="badge">Леса</span>
+        <h2>Лиса</h2>
+        <p>Хитрая охотница. Умеет слышать мышь даже под толстым слоем снега.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://plus.unsplash.com/premium_photo-1663957988801-f7a0e150998e?q=80&w=1241&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Носорог"></div>
+        <span class="badge">Саванна</span>
+        <h2>Носорог</h2>
+        <p>Мощное животное с очень толстой кожей, похожее на живой танк.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://images.unsplash.com/photo-1570481662006-a3a1374699e8?w=500" alt="Дельфин"></div>
+        <span class="badge">Море</span>
+        <h2>Дельфин</h2>
+        <p>Самое дружелюбное морское млекопитающее с высоким интеллектом.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://cdn.lifehacker.ru/wp-content/uploads/2023/04/axolotl-g6031a996f_1920_1681919884-e1681920049408.jpg" alt="Аксолотль"></div>
+        <span class="badge">Мексика</span>
+        <h2>Аксолотль</h2>
+        <p>Уникальная саламандра, которая сохраняет жабры на всю жизнь.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://plus.unsplash.com/premium_photo-1721684721653-81aade6c29b8?q=80&w=1155&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Коала"></div>
+        <span class="badge">Австралия</span>
+        <h2>Коала</h2>
+        <p>Сумчатый медвежонок, который спит до 20 часов в день.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://images.unsplash.com/photo-1484406566174-9da000fda645?w=500" alt="Олень"></div>
+        <span class="badge">Лес</span>
+        <h2>Олень</h2>
+        <p>Гордый лесной житель. Его рога обновляются ежегодно.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Standing_jaguar.jpg" alt="Ягуар"></div>
+        <span class="badge">Джунгли</span>
+        <h2>Ягуар</h2>
+        <p>Мощная пятнистая кошка. Умеет охотиться даже на крокодилов.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_PWAXjeopaFTCHW3J3VyDop6q0v1vi8S3pA&s" alt="Гепард"></div>
+        <span class="badge">Степь</span>
+        <h2>Гепард</h2>
+        <p>Самый быстрый зверь на планете. Разгоняется до 110 км/ч.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://static.wikia.nocookie.net/copyright-battle/images/f/f6/%D0%92%D0%BE%D0%BB%D0%BA.jpg/revision/latest/scale-to-width-down/700?cb=20210417110655&path-prefix=ru" alt="Волк"></div>
+        <span class="badge">Тайга</span>
+        <h2>Волк</h2>
+        <p>Умный и преданный хищник, который всегда верен своей стае.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=500" alt="Черепаха"></div>
+        <span class="badge">Океан</span>
+        <h2>Морская черепаха</h2>
+        <p>Древний житель океана, проплывающий тысячи миль за жизнь.</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 Мир Животных. Личный сайт Самуеля.
+</footer>
+
+</body>
+</html>
